@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fnetreal-featplat_jd163"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告特征平台工程师·批处理调度与吞吐折中相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "fnetreal" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://fnetreal.github.io"
+Repository = "https://github.com/fnetreal/featplat_jd163"
+Issues = "https://github.com/fnetreal/featplat_jd163/issues"
+
+[project.scripts]
+featplat_jd163 = "featplat_jd163:main"
+
+[tool.setuptools]
+py-modules = ["featplat_jd163"]
